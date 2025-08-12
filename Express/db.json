@@ -1,0 +1,10 @@
+{
+  "todos": [
+    { "id": 1, "task": "learn http", "status": "completed" },
+    { "id": 2, "task": "learn express", "status": "ongoing" },
+    { "id": 3, "task": " Learn Auth", "status": "not started" },
+    { "id": 4, "task": " Learn Auth2", "status": "not started" },
+    { "id": 5, "task": " Learn sockets", "status": "not started" },
+    { "id": 6, "task": " Learn Nodejs", "status": "not started" }
+  ]
+}
