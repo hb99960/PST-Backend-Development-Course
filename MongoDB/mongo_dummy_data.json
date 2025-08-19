@@ -1,0 +1,202 @@
+[
+  {
+    "_id": {
+      "$oid": "c3e1cb0fa7d9b6739795b6fd"
+    },
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma@yahoo.com",
+    "marks": 56,
+    "interest": "backend",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "9f7963d0acb6d5f630f1dc85"
+    },
+    "name": "Vivaan Mehta",
+    "email": "vivaan.mehta@outlook.com",
+    "marks": 53,
+    "interest": "DevOps",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "7ad20aa4132b536bfb866e25"
+    },
+    "name": "Aditya Rao",
+    "email": "aditya.rao@yahoo.com",
+    "marks": 96,
+    "interest": "AI/ML",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "f0182f672a6faed2697bfe67"
+    },
+    "name": "Arjun Nair",
+    "email": "arjun.nair@gmail.com",
+    "marks": 89,
+    "interest": "AI/ML",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "ae98406734b6c17219168908"
+    },
+    "name": "Rohan Kapoor",
+    "email": "rohan.kapoor@gmail.com",
+    "marks": 99,
+    "interest": "AI/ML",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "bdef1223bcf20342b329e822"
+    },
+    "name": "Ishaan Verma",
+    "email": "ishaan.verma@outlook.com",
+    "marks": 88,
+    "interest": "fullstack",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "84399ed5758597714dc2722e"
+    },
+    "name": "Kabir Malhotra",
+    "email": "kabir.malhotra@outlook.com",
+    "marks": 68,
+    "interest": "AI/ML",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "8c35fd8e9c072bf0595920e4"
+    },
+    "name": "Rahul Reddy",
+    "email": "rahul.reddy@yahoo.com",
+    "marks": 63,
+    "interest": "backend",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "1ccd5d005f7fe544ca948c72"
+    },
+    "name": "Siddharth Bansal",
+    "email": "siddharth.bansal@gmail.com",
+    "marks": 96,
+    "interest": "Database",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "b7fe974c0fc591c2bf4e87e4"
+    },
+    "name": "Kunal Joshi",
+    "email": "kunal.joshi@gmail.com",
+    "marks": 75,
+    "interest": "DevOps",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "db7234dd2b4da9c6e07c1fcf"
+    },
+    "name": "Ananya Iyer",
+    "email": "ananya.iyer@outlook.com",
+    "marks": 98,
+    "interest": "backend",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "f7b4d8aaa81d030b6fdb6491"
+    },
+    "name": "Diya Kulkarni",
+    "email": "diya.kulkarni@gmail.com",
+    "marks": 85,
+    "interest": "Cloud",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "6338954cae16790492aa500a"
+    },
+    "name": "Riya Deshmukh",
+    "email": "riya.deshmukh@yahoo.com",
+    "marks": 90,
+    "interest": "DevOps",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "6fd05246f760881406d5ea71"
+    },
+    "name": "Meera Menon",
+    "email": "meera.menon@gmail.com",
+    "marks": 97,
+    "interest": "DevOps",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "99e792d8435d44d7fd8137d3"
+    },
+    "name": "Priya Pillai",
+    "email": "priya.pillai@gmail.com",
+    "marks": 68,
+    "interest": "DevOps",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "8764c6d52cc5177541ca8ccf"
+    },
+    "name": "Neha Chatterjee",
+    "email": "neha.chatterjee@yahoo.com",
+    "marks": 77,
+    "interest": "frontend",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "fea7ff8bf5e089a8233587db"
+    },
+    "name": "Sanya Bhattacharya",
+    "email": "sanya.bhattacharya@outlook.com",
+    "marks": 93,
+    "interest": "Cloud",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "f81faae5547cd7f01fd755f9"
+    },
+    "name": "Isha Patil",
+    "email": "isha.patil@yahoo.com",
+    "marks": 77,
+    "interest": "DevOps",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "82a8575208736f3eeb59a54e"
+    },
+    "name": "Nisha Singh",
+    "email": "nisha.singh@yahoo.com",
+    "marks": 100,
+    "interest": "DevOps",
+    "role": "Software Engineer"
+  },
+  {
+    "_id": {
+      "$oid": "5f6642760ac183cdba51fd90"
+    },
+    "name": "Kavya Gupta",
+    "email": "kavya.gupta@gmail.com",
+    "marks": 77,
+    "interest": "fullstack",
+    "role": "Software Engineer"
+  }
+]
