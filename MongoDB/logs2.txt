@@ -1,0 +1,17 @@
+::1 -- [5:48:30 PM] DELETE /users/82a8575208736f3eeb59a54e 200
+::1 -- [5:48:03 PM] DELETE /users/82a8575208736f3eeb59a54e 200
+::1 -- [5:46:25 PM] GET /health 200
+::1 -- [10:48:58 AM] GET /health 200
+::1 -- [12:06:21 PM] GET / 200
+::1 -- [11:43:44 AM] PATCH /users/6 200
+::1 -- [11:43:41 AM] PATCH /users/9 200
+::1 -- [11:43:20 AM] PATCH /users/4 200
+::1 -- [11:43:16 AM] PATCH /users/9 200
+::1 -- [11:43:02 AM] PATCH /users/9 200
+::1 -- [11:42:13 AM] DELETE /users/2 200
+::1 -- [11:41:32 AM] POST /users 200
+::1 -- [11:40:41 AM] POST /users 200
+::1 -- [11:40:12 AM] POST /users 200
+::1 -- [11:39:58 AM] GET /users 200
+::1 -- [11:39:51 AM] GET /tasks?search=http 200
+::1 -- [11:39:41 AM] GET /health 200
