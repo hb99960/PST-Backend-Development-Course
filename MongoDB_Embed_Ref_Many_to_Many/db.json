@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "A",
+      "email": "a@gmail.com",
+      "marks": 80,
+      "interest": "Backend"
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "email": "c@gmail.com",
+      "marks": 90,
+      "interest": "Full-Stack"
+    },
+    {
+      "id": 4,
+      "name": "D",
+      "email": "d@gmail.com",
+      "marks": 60,
+      "interest": "Full-Stack"
+    },
+    {
+      "id": 5,
+      "name": "E",
+      "email": "e@gmail.com",
+      "marks": 50,
+      "interest": "Full-Stack"
+    },
+    {
+      "id": 6,
+      "name": "F",
+      "email": "F@gmail.com",
+      "marks": 100,
+      "interest": "Backend"
+    }
+  ]
+}
