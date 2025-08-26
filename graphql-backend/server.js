@@ -72,6 +72,22 @@ const typeDefs = gql`
         getPosts : [Post!]!
         getPost(id : ID) : Post!
     }
+
+    input CreateUserInput {
+        name : String!
+        email : String!
+    }
+
+    input CreatePostInput {
+        title : String!
+        content : String!
+        authorId : ID!
+    }
+
+    type Mutation {
+        createUser(input : CreateUserInput) : User!
+        createPost(input : CreatePostInput) : Post!
+    }
 `
 const resolvers = {
     Query : {
@@ -91,6 +107,36 @@ const resolvers = {
 
     Post : {
         author : (post) => USERS.find(user=>user.id===post.authorId)
+    },
+
+    Mutation : {
+        createUser : (_, {input})=>{
+            const newUser = {
+                ...input,
+                id : USERS.length+1
+            }
+
+            USERS.push(newUser)
+
+            return newUser
+        },
+        createPost : (_, {input})=>{
+
+            console.log(input)
+
+            const newPost = {
+                ...input,
+                authorId : parseInt(input.authorId),
+                id : POSTS.length + 1,
+                publishedAt : new Date().toISOString()
+            }
+
+            POSTS.push(newPost)
+
+            console.log(POSTS)
+
+            return newPost
+        }
     }
 }
 
