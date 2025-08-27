@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websocket Project V2</title>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Simple Chat Application using Websocket</h1>
+    <div>
+        <input id="room-input" type="text" placeholder="Enter room"/>
+        <button id="join-btn">Join</button>
+        <h6 id="current-room">Room : No Room</h6>
+    </div>
+    <hr>
+    <div>
+        <input id="message-input" type="text" placeholder="Enter Message"/>
+        <button id="send-btn">Send</button>
+    </div>
+    <div>
+        <ul id="messages"></ul>
+    </div>
+    <script>
+        var currentRoom = ""
+
+        const socket = io("http://localhost:3000")
+
+        const roomInput = document.getElementById("room-input")
+        const joinBtn = document.getElementById("join-btn")
+        const msgInput = document.getElementById("message-input")
+        const sendBtn = document.getElementById("send-btn")
+        const messagesCont = document.getElementById("messages")
+
+        sendBtn.addEventListener("click", ()=>{
+            const message = msgInput.value
+
+            console.log(`Test1 - ${message} ${currentRoom}`)
+
+            if(message.trim()!==""){
+                console.log(`Test2 - ${message} ${currentRoom}`)
+                socket.emit("chat:send", {
+                    room : currentRoom,
+                    msg : message
+                })
+                msgInput.value = ""
+            }
+        })
+
+        joinBtn.addEventListener("click", ()=>{
+            const room = roomInput.value
+
+            if(room.trim()!==""){
+                socket.emit("room:join", room)
+                roomInput.value = ""
+            }
+        })
+
+        socket.on("chat:new", (data)=>{
+            const {text, id} = data
+
+            const li = document.createElement("li")
+
+            li.textContent = `ID ${id} - ${text}`
+
+            messagesCont.appendChild(li)
+        })
+
+
+        socket.on("room:joined", (room)=>{
+            document.getElementById("current-room").innerText = `Room - ${room}`
+            currentRoom = room
+        })
+    </script>
+</body>
+</html>

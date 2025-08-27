@@ -22,6 +22,30 @@ io.on("connection", (socket)=>{
     socket.on("room:join", (room)=>{
         socket.join(room)
         console.log(`client with id : ${socket.id} have joined Room : ${room}`)
+
+        socket.emit("room:joined", room)
+
+        socket.to(room).emit('chat:new',{
+            id : "SERVER",
+            text : `New client with ID : ${socket.id} have joined the Room : ${room}`
+        })
+    })
+
+    socket.on("chat:send", ({room, msg})=>{
+        if(!room || !msg){
+            return
+        }
+
+        if(room.trim()==="" || msg.trim()===""){
+            return
+        }
+
+        console.log(`${room} - ${socket.id} - ${msg}`)
+
+        io.to(room).emit('chat:new', {
+            id : socket.id,
+            text : msg
+        })
     })
 
     socket.on('disconnect', ()=>{
