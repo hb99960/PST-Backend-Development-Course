@@ -2,16 +2,21 @@ const express = require("express")
 
 const ErrorHandlerMiddleware = require("./middlewares/ErrorHandler.middleware")
 
+const {ApiError, UserNotFoundError} = require("./CustomError")
+
 const PORT = 3000
 
 const app = express()
 
-app.get("/profile", (req, res)=>{
+app.get("/profile", (req, res, next)=>{
     try{
         const user = null
         res.send(user.profilePic)
     }catch(err){
-        throw new Error(err)
+        // throw new Error(err)
+        // throw new ApiError("Forbidden", 403)
+        // next(new ApiError("User not found", 404))
+        next(new UserNotFoundError())
         // res.status(500).json({
         //     success : false,
         //     error : err.message

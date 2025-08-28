@@ -2,9 +2,10 @@ function ErrorHandlerMiddleware(err, req, res, next){
     // Add log in logs/error.log file
     console.error(err.stack)
 
-    res.status(500).json({
+    res.status(err.statusCode || 500).json({
         success : false,
-        message : `Something went wrong : ${err.message}`
+        statusCode : err.statusCode || 500,
+        message : `${err.message}`
     })
 }
 
