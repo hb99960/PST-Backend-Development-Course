@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Calling App</title>
+    <link rel="stylesheet" href="/style.css"></html>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="/main.js" defer></script>
+    
+</head>
+<body>
+
+   <main class="main-container">
+    <aside class="caller-list-wrapper">
+        <h1 class="caller-list-heading">Contacts</h1>
+        <ul id="allusers" class="caller-list" >
+            <!-- list by dom -->
+        </ul>
+    </aside>
+    <section class="video-call-container">
+        <div class="username-input">
+            <input id="username" type="text" placeholder="Enter Username">
+            <button id="create-user">Create</button>
+        </div>
+
+        <div class="video-streams">
+            <div class="local-video">
+                <video id="localVideo" autoplay muted></video>
+            </div>
+            <div class="remote-video">
+                <video id="remoteVideo" autoplay muted playsinline></video>
+            </div>
+        </div>
+
+        <div class="video-call-disconnect">
+            <button id="end-call-btn" class="call-disconnect">
+                Disconnect
+            </button>
+        </div>
+    </section>
+   </main>
+
+</body>
+</html>

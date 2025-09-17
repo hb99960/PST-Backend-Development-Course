@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* 33B816 */
+html {
+	font-size: 10px;
+	background: black;
+}
+
+body {
+	color: yellow;
+}
+
+ul li {
+	list-style: none;
+}
+
+/* || styling main container */
+.main-container {
+	height: 100vh;
+	display: flex;
+}
+
+/* || styling caller list - side menu*/
+.caller-list-heading {
+	margin: 1rem 1.5rem;
+    width: 20vw;
+}
+.caller-list-wrapper {
+	border-right: 1px solid yellow;
+}
+.caller-list > li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	margin: .5rem;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.6rem;
+}
+
+/* || video call container styling */
+.video-call-container {
+	display: flex;
+    flex-grow: 1;
+	flex-direction: column;
+	align-items: center; /* vertical align*/
+}
+.video-streams {
+	display: flex;
+	gap: 1em;
+}
+.local-video,
+.remote-video {
+	width: 50rem;
+	height: 40rem;
+	background: black;
+	overflow: hidden;
+}
+
+.local-video video,
+.remote-video video {
+	width: 100%;
+	height: 100%;
+	background: black;
+    overflow: hidden;
+    border: 5px solid yellow;
+}
+
+
+.username-input {
+	margin: 2rem 0;
+}
+
+.username-input input {
+	width: 30rem;
+	height: 4rem;
+	padding: 5px;
+	outline: none;
+	border: 2px solid yellow;
+	font-weight: 500;
+}
+
+.username-input button {
+	height: 4rem;
+	outline: none;
+	border: 5px solid yellow;
+	padding: 0 1rem;
+	color: yellow;
+	background: black;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.video-call-disconnect{
+    margin-top: 1em;
+}
