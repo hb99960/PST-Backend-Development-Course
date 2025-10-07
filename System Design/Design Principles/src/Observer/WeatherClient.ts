@@ -1,0 +1,11 @@
+import { SmartphoneObserver } from "./SmartphoneObserver.js";
+import { WeatherStation } from "./WeatherStation.js";
+
+const weatherStation = new WeatherStation();
+const user1 = new SmartphoneObserver();
+const user2 = new SmartphoneObserver();
+weatherStation.attach(user1);
+weatherStation.attach(user2);
+weatherStation.notify();
+weatherStation.detach(user1);
+weatherStation.notify();
