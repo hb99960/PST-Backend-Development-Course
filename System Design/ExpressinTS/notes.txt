@@ -1,0 +1,57 @@
+Setup
+    npm init -y
+    tsc --init
+
+Dependencies
+    npm i express mongoose nodemon
+    npm i @types/express @types/node
+    npm i @types/mongoose
+    npm i typescript
+    npm i --save-dev tsx
+
+
+package.json
+    "type": "module",
+
+tsconfig.json
+    {
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    
+    "outDir": "./dist",
+    "module": "nodenext",
+    "target": "es2022",
+    "types": [],
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",    
+    // Recommended Options
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
+
+package.json
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec tsx ./src/index.ts", 
+    "build": "tsc"
+  }
+
+
+<> Gnerics
+
+() call
+
+{} object
+
+
+Request Object in ts
+P = params      = req.params
+ResBody = any,   
+ReqBody = any,  = req.body
+ReqQuery = core.Query,
+Locals extends Record<string, any> = Record<string, any
+
+tsx vs tsc
+    tsc = transpilation
+    tsx = on the go .ts -> .js
