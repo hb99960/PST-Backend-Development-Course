@@ -1,0 +1,93 @@
+Setup
+    npm init -y
+    tsc --init
+
+Dependencies
+    npm i express mongoose nodemon
+    npm i @types/express @types/node
+    npm i @types/mongoose
+    npm i typescript
+    npm i --save-dev tsx
+
+
+package.json
+    "type": "module",
+
+tsconfig.json
+    {
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    
+    "outDir": "./dist",
+    "module": "nodenext",
+    "target": "es2022",
+    "types": [],
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",    
+    // Recommended Options
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
+
+package.json
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec tsx ./src/index.ts", 
+    "build": "tsc"
+  }
+
+
+<> Gnerics
+
+() call
+
+{} object
+
+
+Request Object in ts
+P = params      = req.params
+ResBody = any,   
+ReqBody = any,  = req.body
+ReqQuery = core.Query,
+Locals extends Record<string, any> = Record<string, any
+
+tsx vs tsc
+    tsc = transpilation
+    tsx = on the go .ts -> .js
+
+
+Response
+    UserResponse[]
+    ApiResponse<T>
+
+unknown vs any
+    more type safe? unknown
+    why? because it checks 
+
+
+union types 
+    symbol : | 
+
+export type ApiResponse<T> = 
+{result:string,  data:T} | 
+{result:string, message:string, error: string | null}
+    T = placeholder value
+    union Response | Error
+
+
+Path params vs Query Params (Interview Question)
+    Part of API? 
+
+Separation of Service Layer from Controller
+Service Layer
+    Separation of Concern
+    Single Responsibility
+        Controller's Responsibility = http response handle
+        Service's Responsibility = DB interaction
+    Scalability, Maintainability
+    Reusability
+
+Homework: Refactoring of Code
+Task : Separate all APIs (createUser, getUserById)
+Task : Search by query (more details in Asssignment)
